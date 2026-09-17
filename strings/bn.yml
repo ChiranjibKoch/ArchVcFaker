@@ -1,0 +1,260 @@
+# Common
+not_authorized: "🚫 অনুমোদিত নয়।"
+owner_sudo_only: "🚫 শুধুমাত্র মালিক/sudo।"
+admins_only: "🚫 শুধুমাত্র অ্যাডমিন।"
+cancelled: "❌ বাতিল করা হয়েছে।"
+error: "❌ ত্রুটি: {0}"
+invalid_chat_id: "❌ অবৈধ চ্যাট আইডি"
+no_userbot: "⚠️ কোনো ব্যবহারকারীর অ্যাকাউন্ট সংযুক্ত নেই। প্রথমে /addaccount ব্যবহার করুন।"
+call_system_not_init: "❌ কল সিস্টেম চালু হয়নি"
+call_system_not_init_add_account: "❌ কল সিস্টেম চালু হয়নি — প্রথমে একটি ইউজারবট অ্যাকাউন্ট যোগ করুন"
+
+# VC Commands
+mute_lock_released: "🔔 `{0}` এর জন্য মিউট-লক মুক্ত। ইউজারবট আনমিউট করা হয়েছে।"
+sudounmute_bridge_warning: "sudounmute bridge: {0}"
+add_usage: "❌ `/add <chat_id>`"
+add_success: "📢 `{0}` যোগ করা হয়েছে।"
+add_already_target: "⚠️ `{0}` ইতিমধ্যে একটি লক্ষ্য।"
+remove_usage: "❌ `/remove <chat_id>`"
+remove_success: "🔇 `{0}` সরানো হয়েছে।"
+mute_usage: "❌ `/mute <chat_id>`"
+mute_success: "🔕 `{0}` মিউট করা হয়েছে।"
+unmute_usage: "❌ `/unmute <chat_id>`"
+unmute_mute_lock: "🔒 মিউট-লক সক্রিয় (অ্যাডমিন কলের সময় মিউট করার চেষ্টা করেছেন)।\nওভাররাইড করতে `/sudounmute` ব্যবহার করুন।"
+unmute_success: "🔔 `{0}` আনমিউট করা হয়েছে।"
+vcstatus_title: "**📡 ভিসি স্ট্যাটাস**"
+vcstatus_record: "🎙 রেকর্ড: `{0}`"
+vcstatus_targets: "📢 টার্গেট: {0}"
+vcstatus_screen: "🖥 স্ক্রীন শেয়ারিং: `{0}`"
+vcstatus_record_group: "🎯 রেকর্ড গ্রুপ: `{0}`"
+vcstatus_mute_lock: "🔒 মিউট-লক: `{0}`"
+play_usage: "❌ `/play <url>` অথবা একটি মিডিয়া মেসেজে রিপ্লাই করুন।"
+play_no_media: "❌ রিপ্লাই করা মেসেজে কোনো স্ট্রিম করার মতো মিডিয়া নেই।"
+play_queued_telegram: "➕ টেলিগ্রাম মিডিয়া কিউয়ে যোগ করা হয়েছে #{0}"
+play_streaming_telegram: "▶️ টেলিগ্রাম ফাইল স্ট্রিমিং…"
+play_queued: "➕ #{0} এ কিউয়ে করা হয়েছে: `{1}`"
+play_resolving_youtube: "⏳ ইউটিউব রিসলভ করা হচ্ছে…"
+play_now_youtube: "▶️ `{0}`"
+play_now_url: "▶️ `{0}`"
+play_now_file: "▶️ `{0}`"
+ytplay_usage: "❌ `/ytplay <youtube_url>`"
+ytplay_resolving: "⏳ রিসলভ করা হচ্ছে…"
+ytplay_now: "▶️ ইউটিউব: `{0}`"
+ytvplay_usage: "❌ `/ytvplay <youtube_url>`"
+ytvplay_resolving: "⏳ ভিডিও রিসলভ করা হচ্ছে…"
+ytvplay_now: "▶️ ইউটিউব ভিডিও: `{0}`"
+pause_success: "⏸ পজ করা হয়েছে।"
+pause_already: "⚠️ ইতিমধ্যে পজ করা আছে।"
+resume_success: "▶️ রিজিউম করা হয়েছে।"
+resume_not_paused: "⚠️ পজ করা নেই।"
+stop_success: "⏹ স্টপ করা হয়েছে।"
+skip_success: "⏭ স্কিপ করা হয়েছে।"
+skip_queue_empty: "⏭ কিউ খালি।"
+seek_usage: "❌ `/seek <seconds>`"
+seek_success: "⏩ `{0}`"
+seek_failed: "❌ সিক ব্যর্থ হয়েছে।"
+progress_info: "⏱ `{0}` | কিউ: `{1}`"
+queue_empty: "📭 খালি।"
+queue_title: "**🎵 কিউ** | {0}"
+queue_now_playing: "▶️ `{0}`"
+queue_more: "_+{0} আরও_"
+shuffle_success: "🔀 শাফল করা হয়েছে।"
+clearqueue_success: "🗑 মুছে ফেলা হয়েছে।"
+loop_status: "লুপ: **{0}**"
+level_current: "🔊 লেভেল: `{0}/60` (ইন্টারনাল ভলিউম: `{1}`)\n`/level 1-60` দিয়ে সেট করুন"
+level_usage: "❌ `/level <1-60>`"
+level_range: "❌ লেভেল অবশ্যই {0} এবং {1} এর মধ্যে হতে হবে।"
+level_set: "🔊 `[{0}]` লেভেল `{1}/60`\n_সম্পূর্ণ লাউডনেস প্রক্রিয়াকরণ সক্রিয় — কোনো বিকৃতি নেই।_"
+bass_current: "🎸 `{0}`"
+bass_range: "❌ 0–30"
+bass_set: "🎸 `{0}`"
+treble_current: "🎻 `{0}`"
+treble_range: "❌ 0–30"
+treble_set: "🎻 `{0}`"
+pitch_current: "🎵 `{0}` সেমিটোন"
+pitch_range: "❌ -12 থেকে +12"
+pitch_set: "🎵 `{0}` সেমিটোন"
+effects_info: "**🎛 ইফেক্টস**\n🔊 লেভেল: `{0}/60` | 🎸 বাস: `{1}` | 🎻 ট্রেবল: `{2}` | 🎵 পিচ: `{3}`"
+resetfx_success: "🔄 ইফেক্টস রিসেট। লেভেল → `1/60` (ইউনিটি, ক্লিয়ার অডিও)"
+panel_title: "**🎛 ভিসি প্যানেল**"
+panel_now_playing: "▶️ `{0}`"
+panel_status: "{0} | 🔊 লেভেল `{1}/60` | লুপ: {2}"
+panel_playing: "▶ চলছে"
+panel_idle: "⏹ নিষ্ক্রিয়"
+cb_panel_paused: "⏸"
+cb_panel_already_paused: "ইতিমধ্যে পজ করা আছে"
+cb_panel_resumed: "▶️"
+cb_panel_not_paused: "পজ করা নেই"
+cb_panel_skipped: "⏭"
+cb_panel_stopped: "⏹"
+cb_panel_shuffled: "🔀"
+cb_panel_level_up: "🔊 লেভেল {0}/60"
+cb_panel_level_down: "🔉 লেভেল {0}/60"
+
+# Bridge Commands
+setrecordgroup_usage: "❌ ব্যবহার: `/setrecordgroup <chat_id>`"
+setrecordgroup_current: "📌 রেকর্ড গ্রুপ স্থায়ীভাবে `{0}` তে সেট করা আছে।\nএটি মুছতে `/clearrecordgroup` ব্যবহার করুন।"
+setrecordgroup_already_set: "🔒 রেকর্ড গ্রুপ স্থায়ীভাবে `{0}` তে সেট করা আছে।\nনতুন সেট করার আগে `/clearrecordgroup` ব্যবহার করুন।"
+setrecordgroup_already_active: "✅ রেকর্ড গ্রুপ `{0}` ইতিমধ্যে স্থায়ীভাবে সেট করা এবং সক্রিয়।"
+setrecordgroup_snapshot_failed: "❌ বর্তমান অবস্থা পেতে ব্যর্থ: {0}"
+setrecordgroup_join_failed: "❌ রেকর্ড গ্রুপ `{0}` এ ভয়েস কলে যোগ দিতে ব্যর্থ: {1}"
+setrecordgroup_success: "✅ রেকর্ড গ্রুপ স্থায়ীভাবে `{0}` তে সেট এবং ভিসিতে যোগ দেওয়া হয়েছে।\nএটি রিস্টার্টের পরেও থাকবে। পরিবর্তন করতে `/clearrecordgroup` ব্যবহার করুন।"
+clearrecordgroup_owner_only: "🚫 শুধুমাত্র মালিক/ডেভ রেকর্ড গ্রুপ মুছতে পারেন।"
+clearrecordgroup_success: "🗑 রেকর্ড গ্রুপ মুছে ফেলা হয়েছে। নতুন সেট করতে `/setrecordgroup <chat_id>` ব্যবহার করুন।"
+join_usage: "❌ ব্যবহার: `/join <chat_id>`"
+join_no_record_group: "❌ কোনো রেকর্ড গ্রুপ সেট করা নেই — প্রথমে `/setrecordgroup <chat_id>` ব্যবহার করুন"
+join_success: "✅ সক্রিয়: `{0}` → `{1}`"
+leave_success: "👋 সব কল থেকে বেরিয়ে এসে অবস্থা মুছে ফেলা হয়েছে"
+audio_current: "🔊 অডিও বর্তমানে **{0}**।\nব্যবহার: `/audio on` বা `/audio off`"
+audio_set: "✅ অডিও **{0}** করা হয়েছে"
+screenshare_current: "🖥 স্ক্রীন শেয়ারিং বর্তমানে **{0}**।\nব্যবহার: `/screenshare on` বা `/screenshare off`"
+screenshare_set: "✅ স্ক্রীন শেয়ারিং **{0}** করা হয়েছে"
+status_idle: "🔌 নিষ্ক্রিয় — কোনো সক্রিয় গ্রুপ নেই"
+status_title: "**📡 স্ট্যাটাস**"
+status_record: "📻 রেকর্ড: `{0}`"
+status_record_none: "📻 রেকর্ড: *কিছু নেই*"
+status_playing: "🔊 {0} গ্রুপ(গুলি) তে প্লে করা হচ্ছে:"
+status_playing_none: "🔊 প্লে করা হচ্ছে: *কিছু নেই*"
+status_audio: "🔊 অডিও: **{0}**"
+status_screen: "🖥 স্ক্রীন শেয়ারিং: **{0}**"
+
+# Start/Help Commands
+help_text: |
+  **🎛 ArchVcFight**
+
+  **ভিসি / কল**
+  `/join <chat_id>` — রেকর্ড ভিসিতে যোগ দিন
+  `/leave` — রেকর্ড ভিসি ছেড়ে যান
+  `/add <chat_id>` — প্লে টার্গেট যোগ করুন
+  `/remove <chat_id>` — প্লে টার্গেট সরান
+  `/mute <chat_id>` — ভিসি আউটপুট মিউট করুন
+  `/unmute <chat_id>` — ভিসি আউটপুট আনমিউট করুন
+  `/vcstatus` — কল অবস্থা দেখান
+
+  **প্লেব্যাক**
+  `/play <url|reply>` — প্লে বা কিউ করুন
+  `/pause /resume /stop /skip`
+  `/seek <sec>` `/progress` `/queue`
+  `/shuffle /clearqueue /loop`
+
+  **ইফেক্টস**
+  `/volume <0-200>` `/bass <0-30>`
+  `/treble <0-30>` `/pitch <-12..12>`
+  `/effects /resetfx`
+
+  **প্যানেল**
+  `/panel` — ইনলাইন কন্ট্রোল প্যানেল
+
+  **রেকর্ডিং**
+  `/recstart [chat_id]` `/recstop [chat_id]` `/reclist`
+
+  **শিডিউলার**
+  `/splay <chat_id> <HH:MM> <url>`
+  `/smsg <chat_id> <HH:MM> <text>`
+  `/slist /scancel <id>`
+
+  **অ্যাডমিন**
+  `/kick /ban /unban /gmute /gunmute`
+  `/warn /warnings /announce`
+  `/chatinfo /userinfo`
+
+  **স্ট্যাট**
+  `/stats /chatstats [chat_id] /resetstats`
+ping_pong: "🏓"
+ping_result: "🏓 `{0}ms`"
+status_me: "👤 `{0}`"
+status_streams: "🎵 স্ট্রিম: `{0}`"
+restart_msg: "♻️ রিস্টার্ট হচ্ছে…"
+
+# Admin Commands
+kick_usage: "❌ ব্যবহারকারীকে রিপ্লাই করুন বা আইডি প্রদান করুন।"
+kick_success: "🦵 `{0}` কিক করা হয়েছে।"
+ban_usage: "❌ ব্যবহারকারীকে রিপ্লাই করুন বা আইডি প্রদান করুন।"
+ban_success: "🔨 `{0}` ব্যান করা হয়েছে।"
+unban_usage: "❌ ব্যবহারকারীকে রিপ্লাই করুন বা আইডি প্রদান করুন।"
+unban_success: "✅ `{0}` আনব্যান করা হয়েছে।"
+gmute_usage: "❌ ব্যবহারকারীকে রিপ্লাই করুন বা আইডি প্রদান করুন।"
+gmute_success: "🔇 `{0}` চ্যাটে মিউট করা হয়েছে।"
+gunmute_usage: "❌ ব্যবহারকারীকে রিপ্লাই করুন বা আইডি প্রদান করুন।"
+gunmute_success: "🔔 `{0}` চ্যাটে আনমিউট করা হয়েছে।"
+warn_usage: "❌ ব্যবহারকারীকে রিপ্লাই করুন বা আইডি প্রদান করুন।"
+
+# Recording Commands
+recstart_already: "⚠️ ইতিমধ্যে `{0}` রেকর্ড করা হচ্ছে।"
+recstart_success: "⏺ `{0}` রেকর্ড করা হচ্ছে। স্টপ: `/recstop {0}`"
+recstop_no_recording: "⚠️ `{0}` এর জন্য কোনো রেকর্ডিং নেই।"
+recstop_stopped: "⏹ স্টপ করা হয়েছে ({0}s)। পাঠানো হচ্ছে…"
+recstop_file_empty: "⚠️ ফাইল খালি বা হারিয়ে গেছে।"
+reclist_empty: "📭 কোনো সক্রিয় রেকর্ডিং নেই।"
+reclist_title: "**⏺ সক্রিয় রেকর্ডিং**"
+reclist_item: "• `{0}` — `{1}s`"
+
+# Account Commands
+addaccount_max_reached: "❌ সর্বাধিক {0} অ্যাকাউন্ট ইতিমধ্যে যোগ করা হয়েছে।\nপ্রথমে একটি মুছতে /delacc ব্যবহার করুন।"
+addaccount_usage: "❌ ব্যবহার: `/addaccount +91XXXXXXXXXX`"
+addaccount_already_added: "⚠️ `{0}` ইতিমধ্যে যোগ করা হয়েছে।"
+addaccount_invalid_phone: "❌ অবৈধ ফোন নম্বর।"
+addaccount_api_mismatch: "❌ API_ID / API_HASH মিলছে না।"
+addaccount_otp_sent: "📲 `{0}` এ OTP পাঠানো হয়েছে।\nকোড সহ রিপ্লাই করুন — **প্রতিটি সংখ্যার মধ্যে স্পেস**:\nউদাহরণ: `1 2 3 4 5`\n\nঅথবা বাতিল করতে /cancel।"
+addaccount_otp_invalid: "❌ OTP অবৈধ। আবার `/addaccount` ব্যবহার করুন।\n_মনে রাখবেন: স্পেস সহ সংখ্যা পাঠান: `1 2 3 4 5`_"
+addaccount_otp_expired: "❌ OTP মেয়াদ শেষ। আবার /addaccount ব্যবহার করুন।"
+addaccount_2fa_prompt: "🔐 2FA সক্রিয়। আপনার পাসওয়ার্ড পাঠান।"
+addaccount_password_invalid: "❌ ভুল পাসওয়ার্ড।"
+addaccount_unexpected_error: "❌ অপ্রত্যাশিত ত্রুটি: `{0}`"
+addaccount_success: "✅ অ্যাকাউন্ট সংরক্ষিত এবং ইউজারবট চালু হয়েছে।"
+addaccount_success_with_info: "{0}\n📞 `{1}` — **{2}** (`{3}`)\n📊 অ্যাকাউন্ট: `{4}/{5}`"
+addaccount_userbot_error: "✅ অ্যাকাউন্ট সংরক্ষিত। ইউজারবট চালু ত্রুটি: `{0}`"
+delacc_usage: "❌ `/delacc +91XXXXXXXXXX`"
+delacc_success: "🗑 অ্যাকাউন্ট `{0}` মুছে ফেলা হয়েছে।"
+listaccs_empty: "📭 কোনো অ্যাকাউন্ট সংরক্ষিত নেই।"
+listaccs_title: "**📋 অ্যাকাউন্ট ({0}/{1})**"
+listaccs_item: "{0} **{1}** (`{2}`)\n   📞 `{3}`"
+no_accounts_use_addaccount: "⚠️ কোনো অ্যাকাউন্ট যোগ করা হয়নি। প্রথমে /addaccount ব্যবহার করুন।"
+only_one_account: "⚠️ শুধুমাত্র একটি অ্যাকাউন্ট যোগ করা হয়েছে — স্যুইচ করার কিছু নেই।"
+select_account_title: "**🔀 `{0}` এর জন্য অ্যাকাউন্ট নির্বাচন করুন:**"
+acc_pick_cancelled: "বাতিল করা হয়েছে।"
+acc_pick_failed: "❌ সেই অ্যাকাউন্ট চালু করা যায়নি।"
+acc_pick_no_record_group: "✅ অ্যাকাউন্ট `{0}` নির্বাচিত।\n❌ কোনো রেকর্ড গ্রুপ সেট করা নেই — ডেভকে `/setrecordgroup <id>` চালাতে বলুন।"
+acc_pick_joining: "⏳ `{0}` দিয়ে যোগ দেওয়া হচ্ছে…"
+acc_pick_success: "✅ **সক্রিয়** `{0}` এর মাধ্যমে\n📻 রেকর্ড: `{1}`\n🔊 প্লে: `{2}`"
+acc_pick_join_failed: "❌ যোগ দিতে ব্যর্থ: `{0}`"
+addsudo_usage: "❌ `/addsudo <user_id>`"
+addsudo_max_reached: "❌ সর্বাধিক 3 sudo ব্যবহারকারীরা ইতিমধ্যে সেট করা আছে।"
+addsudo_invalid_id: "❌ ব্যবহারকারী আইডি অবশ্যই একটি পূর্ণসংখ্যা হতে হবে।"
+addsudo_success: "✅ `{0}` sudo তে যোগ করা হয়েছে।"
+addsudo_max_reached_alt: "⚠️ সর্বাধিক 3 sudos পৌঁছেছে।"
+delsudo_usage: "❌ `/delsudo <user_id>`"
+delsudo_invalid_id: "❌ ব্যবহারকারী আইডি অবশ্যই একটি পূর্ণসংখ্যা হতে হবে।"
+delsudo_success: "🗑 `{0}` sudo থেকে সরানো হয়েছে।"
+listsudos_empty: "📭 কোনো sudo ব্যবহারকারী নেই।"
+listsudos_title: "**👥 Sudo ব্যবহারকারী**"
+listsudos_item: "• `{0}`"
+deployinfo_title: "**⏰ ডিপ্লয়মেন্ট তথ্য**"
+deployinfo_days_remaining: "📅 অবশিষ্ট দিন: `{0}/30`"
+deployinfo_expired: "⚠️ **মেয়াদ শেষ** — বট শীঘ্রই থামবে\nবাড়াতে `/resetdeploy` ব্যবহার করুন"
+deployinfo_start_time: "🕒 শুরু: `{0}`"
+deployinfo_active: "✅ সক্রিয়: `{0}`"
+resetdeploy_success: "✅ ডিপ্লয়মেন্ট টাইমার রিসেট। 30-দিনের ঘড়ি পুনরায় শুরু।"
+switchaccount_select_title: "**🔄 স্যুইচ করুন:**"
+cb_switch_cancelled: "বাতিল করা হয়েছে।"
+cb_switch_failed: "❌ সেই অ্যাকাউন্টে স্যুইচ করা যায়নি।"
+cb_switch_success: "✅ অ্যাকাউন্ট `{0}` তে স্যুইচ করা হয়েছে\n👤 **{1}** (`{2}`)"
+cb_switch_switched: "✅ স্যুইচ করা হয়েছে!"
+
+# Language
+setlang_success: "✅ ভাষা {0} তে সেট করা হয়েছে"
+language_select: "🌐 আপনার ভাষা নির্বাচন করুন:"
+btn_help: "❓ সাহায্য"
+btn_status: "📊 স্ট্যাটাস"
+btn_language: "🌐 ভাষা"
+btn_leave: "👋 ছেড়ে যান"
+lang_english: "🇬🇧 English"
+lang_bengali: "🇧🇩 বাংলা"
+lang_hindi: "🇮🇳 हिंदी"
+
+# Misc
+on: "চালু"
+off: "বন্ধ"
+none: "কিছু নেই"
+active: "সক্রিয়"
+idle: "নিষ্ক্রিয়"

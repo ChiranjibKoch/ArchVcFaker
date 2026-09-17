@@ -1,0 +1,42 @@
+from pyrogram import Client, filters
+from pyrogram.raw.types import KeyboardButtonRequestPeer, ReplyKeyboardMarkup
+from pyrogram.raw.types import RequestPeerTypeUser, RequestPeerTypeChat, RequestPeerTypeChannel
+from pyrogram.raw.types import Message as RawMessage
+from pyrogram.raw.types import RequestedPeerUser, RequestedPeerChat, RequestedPeerChannel
+
+from ArchVcfight.guard import deployment_guard
+
+@deployment_guard
+@Client.on_message(filters.command("chatid"))
+async def chatid_command(client: Client, message: Message):
+    buttons = [
+        [
+            KeyboardButtonRequestPeer(text="User", peer_type=RequestPeerTypeUser(), button_id=1),
+            KeyboardButtonRequestPeer(text="Group", peer_type=RequestPeerTypeChat(), button_id=2),
+            KeyboardButtonRequestPeer(text="Channel", peer_type=RequestPeerTypeChannel(), button_id=3)
+        ]
+    ]
+    await client.send_message(
+        message.chat.id,
+        "Tap a button to share a chat:",
+        reply_markup=ReplyKeyboardMarkup(buttons, resize=True, one_time=True)
+    )
+
+@deployment_guard
+@Client.on_message(filters.private & ~filters.command("chatid"))
+async def handle_shared_peer(client: Client, message: Message):
+    raw = message._raw
+    if isinstance(raw, RawMessage) and raw.action and hasattr(raw.action, "peers"):
+        for peer in raw.action.peers:
+            if isinstance(peer, RequestedPeerUser):
+                uid = peer.user_id
+                name = f"{peer.first_name or ''} {peer.last_name or ''}".strip() or "User"
+            elif isinstance(peer, RequestedPeerChat):
+                uid = peer.chat_id
+                name = peer.title or "Group"
+            elif isinstance(peer, RequestedPeerChannel):
+                uid = int(f"-100{peer.channel_id}")
+                name = peer.title or "Channel"
+            else:
+                continue
+            await message.reply_text(f"{name}\nID: {uid}")

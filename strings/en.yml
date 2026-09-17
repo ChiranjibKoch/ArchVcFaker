@@ -1,0 +1,260 @@
+# Common
+not_authorized: "🚫 Not authorized."
+owner_sudo_only: "🚫 Owner/sudo only."
+admins_only: "🚫 Admins only."
+cancelled: "❌ Cancelled."
+error: "❌ Error: {0}"
+invalid_chat_id: "❌ Invalid chat ID"
+no_userbot: "⚠️ No user account connected. Use /addaccount first."
+call_system_not_init: "❌ Call system not initialized"
+call_system_not_init_add_account: "❌ Call system not initialized — add a userbot account first"
+
+# VC Commands
+mute_lock_released: "🔔 Mute-lock released for `{0}`. Userbot unmuted."
+sudounmute_bridge_warning: "sudounmute bridge: {0}"
+add_usage: "❌ `/add <chat_id>`"
+add_success: "📢 Added `{0}`."
+add_already_target: "⚠️ `{0}` already a target."
+remove_usage: "❌ `/remove <chat_id>`"
+remove_success: "🔇 Removed `{0}`."
+mute_usage: "❌ `/mute <chat_id>`"
+mute_success: "🔕 Muted `{0}`."
+unmute_usage: "❌ `/unmute <chat_id>`"
+unmute_mute_lock: "🔒 Mute-lock is active (admin tried to mute during call).\nUse `/sudounmute` to override."
+unmute_success: "🔔 Unmuted `{0}`."
+vcstatus_title: "**📡 VC Status**"
+vcstatus_record: "🎙 Record: `{0}`"
+vcstatus_targets: "📢 Targets: {0}"
+vcstatus_screen: "🖥 Screen sharing: `{0}`"
+vcstatus_record_group: "🎯 Record group: `{0}`"
+vcstatus_mute_lock: "🔒 Mute-lock: `{0}`"
+play_usage: "❌ `/play <url>` or reply to a media message."
+play_no_media: "❌ Replied message has no streamable media."
+play_queued_telegram: "➕ Telegram media queued at #{0}"
+play_streaming_telegram: "▶️ Streaming Telegram file…"
+play_queued: "➕ Queued at #{0}: `{1}`"
+play_resolving_youtube: "⏳ Resolving YouTube…"
+play_now_youtube: "▶️ `{0}`"
+play_now_url: "▶️ `{0}`"
+play_now_file: "▶️ `{0}`"
+ytplay_usage: "❌ `/ytplay <youtube_url>`"
+ytplay_resolving: "⏳ Resolving…"
+ytplay_now: "▶️ YouTube: `{0}`"
+ytvplay_usage: "❌ `/ytvplay <youtube_url>`"
+ytvplay_resolving: "⏳ Resolving video…"
+ytvplay_now: "▶️ YouTube video: `{0}`"
+pause_success: "⏸ Paused."
+pause_already: "⚠️ Already paused."
+resume_success: "▶️ Resumed."
+resume_not_paused: "⚠️ Not paused."
+stop_success: "⏹ Stopped."
+skip_success: "⏭ Skipped."
+skip_queue_empty: "⏭ Queue empty."
+seek_usage: "❌ `/seek <seconds>`"
+seek_success: "⏩ `{0}`"
+seek_failed: "❌ Seek failed."
+progress_info: "⏱ `{0}` | Queue: `{1}`"
+queue_empty: "📭 Empty."
+queue_title: "**🎵 Queue** | {0}"
+queue_now_playing: "▶️ `{0}`"
+queue_more: "_+{0} more_"
+shuffle_success: "🔀 Shuffled."
+clearqueue_success: "🗑 Cleared."
+loop_status: "Loop: **{0}**"
+level_current: "🔊 Level: `{0}/60` (internal vol: `{1}`)\nSet with `/level 1-60`"
+level_usage: "❌ `/level <1-60>`"
+level_range: "❌ Level must be between {0} and {1}."
+level_set: "🔊 `[{0}]` Level `{1}/60`\n_Full loudness processing active — no distortion._"
+bass_current: "🎸 `{0}`"
+bass_range: "❌ 0–30"
+bass_set: "🎸 `{0}`"
+treble_current: "🎻 `{0}`"
+treble_range: "❌ 0–30"
+treble_set: "🎻 `{0}`"
+pitch_current: "🎵 `{0}` semitones"
+pitch_range: "❌ -12 to +12"
+pitch_set: "🎵 `{0}` semitones"
+effects_info: "**🎛 Effects**\n🔊 Level: `{0}/60` | 🎸 Bass: `{1}` | 🎻 Treble: `{2}` | 🎵 Pitch: `{3}`"
+resetfx_success: "🔄 Effects reset. Level → `1/60` (unity, clear audio)"
+panel_title: "**🎛 VC Panel**"
+panel_now_playing: "▶️ `{0}`"
+panel_status: "{0} | 🔊 Level `{1}/60` | Loop: {2}"
+panel_playing: "▶ Playing"
+panel_idle: "⏹ Idle"
+cb_panel_paused: "⏸"
+cb_panel_already_paused: "already paused"
+cb_panel_resumed: "▶️"
+cb_panel_not_paused: "not paused"
+cb_panel_skipped: "⏭"
+cb_panel_stopped: "⏹"
+cb_panel_shuffled: "🔀"
+cb_panel_level_up: "🔊 Level {0}/60"
+cb_panel_level_down: "🔉 Level {0}/60"
+
+# Bridge Commands
+setrecordgroup_usage: "❌ Usage: `/setrecordgroup <chat_id>`"
+setrecordgroup_current: "📌 Record group is permanently set to `{0}`.\nUse `/clearrecordgroup` to remove it."
+setrecordgroup_already_set: "🔒 Record group is permanently set to `{0}`.\nUse `/clearrecordgroup` to reset it before setting a new one."
+setrecordgroup_already_active: "✅ Record group `{0}` is already permanently set and active."
+setrecordgroup_snapshot_failed: "❌ Failed to retrieve current state: {0}"
+setrecordgroup_join_failed: "❌ Failed to join voice call in record group `{0}`: {1}"
+setrecordgroup_success: "✅ Record group permanently set to `{0}` and joined VC.\nThis will survive restarts. Use `/clearrecordgroup` to change it."
+clearrecordgroup_owner_only: "🚫 Only owner/dev can clear the record group."
+clearrecordgroup_success: "🗑 Record group cleared. Use `/setrecordgroup <chat_id>` to set a new one."
+join_usage: "❌ Usage: `/join <chat_id>`"
+join_no_record_group: "❌ No record group set — use `/setrecordgroup <chat_id>` first"
+join_success: "✅ Active: `{0}` → `{1}`"
+leave_success: "👋 Left all calls and cleared state"
+audio_current: "🔊 Audio is currently **{0}**.\nUsage: `/audio on` or `/audio off`"
+audio_set: "✅ Audio turned **{0}**"
+screenshare_current: "🖥 Screen sharing is currently **{0}**.\nUsage: `/screenshare on` or `/screenshare off`"
+screenshare_set: "✅ Screen sharing turned **{0}**"
+status_idle: "🔌 Idle — no active groups"
+status_title: "**📡 Status**"
+status_record: "📻 Record: `{0}`"
+status_record_none: "📻 Record: *none*"
+status_playing: "🔊 Playing to {0} group(s):"
+status_playing_none: "🔊 Playing to: *none*"
+status_audio: "🔊 Audio: **{0}**"
+status_screen: "🖥 Screen sharing: **{0}**"
+
+# Start/Help Commands
+help_text: |
+  **🎛 ArchVcFight**
+
+  **VC / Call**
+  `/join <chat_id>` — join record VC
+  `/leave` — leave record VC
+  `/add <chat_id>` — add play target
+  `/remove <chat_id>` — remove play target
+  `/mute <chat_id>` — mute VC output
+  `/unmute <chat_id>` — unmute VC output
+  `/vcstatus` — show call state
+
+  **Playback**
+  `/play <url|reply>` — play or queue
+  `/pause /resume /stop /skip`
+  `/seek <sec>` `/progress` `/queue`
+  `/shuffle /clearqueue /loop`
+
+  **Effects**
+  `/volume <0-200>` `/bass <0-30>`
+  `/treble <0-30>` `/pitch <-12..12>`
+  `/effects /resetfx`
+
+  **Panel**
+  `/panel` — inline control panel
+
+  **Recording**
+  `/recstart [chat_id]` `/recstop [chat_id]` `/reclist`
+
+  **Scheduler**
+  `/splay <chat_id> <HH:MM> <url>`
+  `/smsg <chat_id> <HH:MM> <text>`
+  `/slist /scancel <id>`
+
+  **Admin**
+  `/kick /ban /unban /gmute /gunmute`
+  `/warn /warnings /announce`
+  `/chatinfo /userinfo`
+
+  **Stats**
+  `/stats /chatstats [chat_id] /resetstats`
+ping_pong: "🏓"
+ping_result: "🏓 `{0}ms`"
+status_me: "👤 `{0}`"
+status_streams: "🎵 Streams: `{0}`"
+restart_msg: "♻️ Restarting…"
+
+# Admin Commands
+kick_usage: "❌ Reply to user or provide ID."
+kick_success: "🦵 `{0}` kicked."
+ban_usage: "❌ Reply to user or provide ID."
+ban_success: "🔨 `{0}` banned."
+unban_usage: "❌ Reply to user or provide ID."
+unban_success: "✅ `{0}` unbanned."
+gmute_usage: "❌ Reply to user or provide ID."
+gmute_success: "🔇 `{0}` muted in chat."
+gunmute_usage: "❌ Reply to user or provide ID."
+gunmute_success: "🔔 `{0}` unmuted in chat."
+warn_usage: "❌ Reply to user or provide ID."
+
+# Recording Commands
+recstart_already: "⚠️ Already recording `{0}`."
+recstart_success: "⏺ Recording `{0}`. Stop: `/recstop {0}`"
+recstop_no_recording: "⚠️ No recording for `{0}`."
+recstop_stopped: "⏹ Stopped ({0}s). Sending…"
+recstop_file_empty: "⚠️ File empty or missing."
+reclist_empty: "📭 No active recordings."
+reclist_title: "**⏺ Active Recordings**"
+reclist_item: "• `{0}` — `{1}s`"
+
+# Account Commands
+addaccount_max_reached: "❌ Max {0} accounts already added.\nUse /delacc to remove one first."
+addaccount_usage: "❌ Usage: `/addaccount +91XXXXXXXXXX`"
+addaccount_already_added: "⚠️ `{0}` is already added."
+addaccount_invalid_phone: "❌ Invalid phone number."
+addaccount_api_mismatch: "❌ API_ID / API_HASH mismatch."
+addaccount_otp_sent: "📲 OTP sent to `{0}`.\nReply with the code — **spaces between each digit**:\nExample: `1 2 3 4 5`\n\nOr /cancel to abort."
+addaccount_otp_invalid: "❌ OTP invalid. Use `/addaccount` to try again.\n_Remember: send digits with spaces: `1 2 3 4 5`_"
+addaccount_otp_expired: "❌ OTP expired. Use /addaccount again."
+addaccount_2fa_prompt: "🔐 2FA enabled. Send your password."
+addaccount_password_invalid: "❌ Wrong password."
+addaccount_unexpected_error: "❌ Unexpected error: `{0}`"
+addaccount_success: "✅ Account saved and userbot started."
+addaccount_success_with_info: "{0}\n📞 `{1}` — **{2}** (`{3}`)\n📊 Accounts: `{4}/{5}`"
+addaccount_userbot_error: "✅ Account saved. Userbot start error: `{0}`"
+delacc_usage: "❌ `/delacc +91XXXXXXXXXX`"
+delacc_success: "🗑 Account `{0}` removed."
+listaccs_empty: "📭 No accounts stored."
+listaccs_title: "**📋 Accounts ({0}/{1})**"
+listaccs_item: "{0} **{1}** (`{2}`)\n   📞 `{3}`"
+no_accounts_use_addaccount: "⚠️ No accounts added. Use /addaccount first."
+only_one_account: "⚠️ Only one account added — nothing to switch to."
+select_account_title: "**🔀 Select account for `{0}`:**"
+acc_pick_cancelled: "Cancelled."
+acc_pick_failed: "❌ Could not start that account."
+acc_pick_no_record_group: "✅ Account `{0}` selected.\n❌ No record group set — ask dev to run `/setrecordgroup <id>`."
+acc_pick_joining: "⏳ Joining with `{0}`…"
+acc_pick_success: "✅ **Active** via `{0}`\n📻 Record: `{1}`\n🔊 Play: `{2}`"
+acc_pick_join_failed: "❌ Join failed: `{0}`"
+addsudo_usage: "❌ `/addsudo <user_id>`"
+addsudo_max_reached: "❌ Max 3 sudo users already set."
+addsudo_invalid_id: "❌ User ID must be an integer."
+addsudo_success: "✅ `{0}` added to sudo."
+addsudo_max_reached_alt: "⚠️ Max 3 sudos reached."
+delsudo_usage: "❌ `/delsudo <user_id>`"
+delsudo_invalid_id: "❌ User ID must be an integer."
+delsudo_success: "🗑 `{0}` removed from sudo."
+listsudos_empty: "📭 No sudo users."
+listsudos_title: "**👥 Sudo Users**"
+listsudos_item: "• `{0}`"
+deployinfo_title: "**⏰ Deployment Info**"
+deployinfo_days_remaining: "📅 Days remaining: `{0}/30`"
+deployinfo_expired: "⚠️ **EXPIRED** — bot will stop soon\nUse `/resetdeploy` to extend"
+deployinfo_start_time: "🕒 Started: `{0}`"
+deployinfo_active: "✅ Active: `{0}`"
+resetdeploy_success: "✅ Deployment timer reset. 30-day clock restarted."
+switchaccount_select_title: "**🔄 Switch to:**"
+cb_switch_cancelled: "Cancelled."
+cb_switch_failed: "❌ Could not switch to that account."
+cb_switch_success: "✅ Account switched to `{0}`\n👤 **{1}** (`{2}`)"
+cb_switch_switched: "✅ Switched!"
+
+# Language
+setlang_success: "✅ Language set to {0}"
+language_select: "🌐 Select your language:"
+btn_help: "❓ Help"
+btn_status: "📊 Status"
+btn_language: "🌐 Language"
+btn_leave: "👋 Leave"
+lang_english: "🇬🇧 English"
+lang_bengali: "🇧🇩 বাংলা"
+lang_hindi: "🇮🇳 हिंदी"
+
+# Misc
+on: "ON"
+off: "OFF"
+none: "None"
+active: "Active"
+idle: "Idle"

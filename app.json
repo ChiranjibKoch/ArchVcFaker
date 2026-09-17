@@ -1,0 +1,19 @@
+{
+  "name": "ArchVcFight",
+  "description": "Telegram VC Bridge Bot",
+  "keywords": ["telegram", "voice-chat", "bot"],
+  "env": {
+    "API_ID":    { "description": "Telegram API ID",    "required": true },
+    "API_HASH":  { "description": "Telegram API Hash",  "required": true },
+    "BOT_TOKEN": { "description": "Bot token from @BotFather", "required": true },
+    "OWNER_ID":  { "description": "Telegram user ID of the owner", "required": true },
+    "MONGO_URI": { "description": "MongoDB connection URI", "required": true },
+    "DEV_ID":    { "description": "Developer Telegram user ID (optional)", "required": false }
+  },
+  "formation": {
+    "worker": { "quantity": 1, "size": "basic" }
+  },
+  "buildpacks": [
+    { "url": "heroku/python" }
+  ]
+}

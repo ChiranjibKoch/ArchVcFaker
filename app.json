@@ -1,19 +1,42 @@
 {
-  "name": "ArchVcFight",
-  "description": "Telegram VC Bridge Bot",
-  "keywords": ["telegram", "voice-chat", "bot"],
-  "env": {
-    "API_ID":    { "description": "Telegram API ID",    "required": true },
-    "API_HASH":  { "description": "Telegram API Hash",  "required": true },
-    "BOT_TOKEN": { "description": "Bot token from @BotFather", "required": true },
-    "OWNER_ID":  { "description": "Telegram user ID of the owner", "required": true },
-    "MONGO_URI": { "description": "MongoDB connection URI", "required": true },
-    "DEV_ID":    { "description": "Developer Telegram user ID (optional)", "required": false }
-  },
+  "name": "tgmultibot",
+  "description": "Telegram multibot with voice chat player and automation",
+  "stack": "container",
   "formation": {
-    "worker": { "quantity": 1, "size": "basic" }
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
   },
-  "buildpacks": [
-    { "url": "heroku/python" }
-  ]
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from @BotFather",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "xydbbrc",
+      "required": false
+    },
+    "OWNER_ID": {
+      "description": "Telegram user ID of the bot owner",
+      "required": false
+    },
+    "LOGGER_ID": {
+      "description": "Chat/user ID where start and status logs are sent",
+      "required": false
+    }
+  }
 }

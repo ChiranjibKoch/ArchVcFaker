@@ -1,0 +1,12 @@
+.git
+.github
+.env
+OwnerrahatVai.env
+*.db
+*.dat
+*.session
+*.md
+tgmultibot
+bin/
+cache_*
+install.sh

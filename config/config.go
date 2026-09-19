@@ -13,10 +13,10 @@ import (
 var (
 	ApiID    = getEnvInt("API_ID", 25021578)
 	ApiHash  = getEnv("API_HASH", "dd92e0a3f0aa00f49ea0c26f441587b9")
-	Token    = getEnv("BOT_TOKEN", "8597640971:AAFQGmtgiD8YYqpjQizSjMSMnUta80AuYQw")
+	Token    = getEnv("BOT_TOKEN", "8370399943:AAHIwANk8HXjKnPOZPO8CoygL7Jsy2aOnFo")
 	LoggerID = getEnvInt64("LOGGER_ID", -1003913393534)
-	MongoURL = getEnv("MONGO_URL", "mongodb+srv://archpublic:v8KG2NlkAa70Fx3V@cluster0.whdnitw.mongodb.net/?appName=Cluster0")
-	DbName = getEnv("DB_NAME", "xeydbbrc")
+	MongoURL = getEnv("MONGO_URL", "mongodb+srv://zoney:OUgHZh2UIbBDwDLR@zoney.lwlpxrk.mongodb.net/?appName=zoney")
+	DbName = getEnv("DB_NAME", "ULTRAHOST")
 
 	OwnerID = getEnvInt64("OWNER_ID", 6303186145)
 	Owner   *telegram.UserObj

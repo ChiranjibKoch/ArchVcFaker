@@ -7,13 +7,15 @@ ENV CGO_ENABLED=1 \
     GOARCH=amd64
 
 RUN apt-get update \
- && apt-get install -y --no-install-recommends zlib1g-dev \
+ && apt-get install -y --no-install-recommends zlib1g-dev unzip curl ca-certificates \
  && rm -rf /var/lib/apt/lists/*
 
 COPY go.mod go.sum ./
 RUN go mod download
 
 COPY . .
+
+RUN chmod +x install.sh && ./install.sh
 
 RUN go build -trimpath -ldflags "-s -w" -o /out/tgmultibot .
 

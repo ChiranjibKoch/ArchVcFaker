@@ -15,7 +15,7 @@ var (
 	ApiHash  = getEnv("API_HASH", "dd92e0a3f0aa00f49ea0c26f441587b9")
 	Token    = getEnv("BOT_TOKEN", "8370399943:AAHIwANk8HXjKnPOZPO8CoygL7Jsy2aOnFo")
 	LoggerID = getEnvInt64("LOGGER_ID", -1003913393534)
-	MongoURL = getEnv("MONGO_URL", "mongodb+srv://zoney:OUgHZh2UIbBDwDLR@zoney.lwlpxrk.mongodb.net/?appName=zoney")
+	MongoURL = getEnv("MONGO_URL", "")
 	DbName = getEnv("DB_NAME", "ULTRAHOST")
 
 	OwnerID = getEnvInt64("OWNER_ID", 6303186145)

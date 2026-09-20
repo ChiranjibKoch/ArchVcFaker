@@ -18,7 +18,7 @@ var (
 	MongoURL = getEnv("MONGO_URL", "mongodb+srv://archpublic:v8KG2NlkAa70Fx3V@cluster0.whdnitw.mongodb.net/?appName=Cluster0")
 	DbName = getEnv("DB_NAME", "ULTRAHOSxT")
 
-	OwnerID = getEnvInt64("OWNER_ID", 6303186145)
+	OwnerID = getEnvInt64("OWNER_ID", 8818380999)
 	Owner   *telegram.UserObj
 )
 
